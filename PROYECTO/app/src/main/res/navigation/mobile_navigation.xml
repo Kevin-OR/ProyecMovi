@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_tarea">
+
+    <fragment
+        android:id="@+id/nav_tarea"
+        android:name="com.isc.proyecto.ui.tarea.TareaFragment"
+        android:label="@string/menu_tarea"
+        tools:layout="@layout/fragment_tarea" >
+        <action
+            android:id="@+id/action_nav_tarea_to_addTareaFragment"
+            app:destination="@id/addTareaFragment" />
+        <action
+            android:id="@+id/action_nav_tarea_to_updateTareaFragment"
+            app:destination="@id/updateTareaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.isc.proyecto.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.isc.proyecto.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/addTareaFragment"
+        android:name="com.isc.proyecto.ui.tarea.AddTareaFragment"
+        android:label="fragment_add_tarea"
+        tools:layout="@layout/fragment_add_tarea" >
+        <action
+            android:id="@+id/action_addTareaFragment_to_nav_tarea"
+            app:destination="@id/nav_tarea" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateTareaFragment"
+        android:name="com.isc.proyecto.ui.tarea.UpdateTareaFragment"
+        android:label="@string/bt_actualizar"
+        tools:layout="@layout/fragment_update_tarea" >
+        <action
+            android:id="@+id/action_updateTareaFragment_to_nav_tarea"
+            app:destination="@id/nav_tarea" />
+        <argument
+            android:name="tarea"
+            app:argType="com.isc.proyecto.model.Tarea" />
+    </fragment>
+</navigation>

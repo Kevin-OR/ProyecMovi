@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="title_activity_drawer">activity_Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_tarea">Tarea</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="msg_TituloTarea">Titulo</string>
+    <string name="msg_DescTarea">Descripcion</string>
+    <string name="msg_curso">Curso</string>
+    <string name="msg_fechaEntrega">Fecha de Entrega</string>
+    <string name="msg_imagen">Imagen</string>
+    <string name="msgTareaAgregada">Tarea agregada</string>
+    <string name="msgFaltanDatos">Faltan Datos...</string>
+    <string name="bt_Agregar">Agregar</string>
+    <string name="msg_FaltanDatos">Faltan Datos...</string>
+    <string name="msgImagen">Imagen...</string>
+    <string name="bt_actualizar">Agregar</string>
+    <string name="menu_slideshow" />
+    <string name="menu_delete" />
+    <string name="si" />
+    <string name="no" />
+    <string name="seguroBorrar" />
+    <string name="deleted" />
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTareaFragment" >
+
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="@string/msg_TituloTarea"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etDescTarea"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="@string/msg_DescTarea"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etCurso"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="@string/msg_curso"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etFechaEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="@string/msg_fechaEntrega"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/bt_Agregar" />
+
+</LinearLayout>
